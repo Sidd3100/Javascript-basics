@@ -85,12 +85,24 @@ const user =[
     }
 
 ]
-console.log(user[0].id);
+// console.log(user[0].id);
 
-console.log(tinderObject);
-console.log(Object.keys(tinderObject));
-console.log(Object.values(tinderObject));
-console.log(Object.entries(tinderObject));
+// console.log(tinderObject);
+// console.log(Object.keys(tinderObject));
+// console.log(Object.values(tinderObject));
+// console.log(Object.entries(tinderObject));
 
 console.log(myObject.hasOwnProperty('isLoggedIn'));
+
+
+//object destructuring
+
+const intro = {
+    id: 1,
+    name: "Sid",
+    exam:"t1"
+}
+const {name: na} = intro;
+
+console.log(na);
 
