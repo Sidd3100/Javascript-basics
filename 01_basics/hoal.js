@@ -45,9 +45,29 @@ for(key in obj){
 const arr =['a','b','c','d'];
 
 for(key in arr){
-    console.log(key, arr[key]);
+   // console.log(key, arr[key]);
 }
 
 for(key of arr){
-    console.log(key);
+   // console.log(key);
 }
+
+//forEach
+
+const arr2 = ['a','b','c','d'];
+
+// arr2.forEach((val)=>{
+//     console.log(val);
+// });
+
+// function printME(val){
+//     console.log(val);
+// }
+
+// arr2.forEach(printME);
+
+arr2.forEach((val,index,arr1)=>{
+    console.log(val,index,arr1);
+})
+
+//NOte: ForEach doesnot returns anything
