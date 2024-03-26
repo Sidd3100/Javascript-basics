@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM basics 2</title>
+</head>
+<body style= "background-color: #212121; color: #fff;">
+
+    <div>
+        <ul class="parent">
+            <li class="day">Monday</li>
+            <li >Tuesday</li>
+            <li>Wednesday</li>
+            <li>Thursday</li>
+        </ul>
+    </div>
+    
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    //console.log(parent);
+    const children = parent.children
+    //console.log(children)
+
+    for(let i=0;i<children.length;i++){
+        //console.log(children[i].innerHTML)
+    }
+    console.log(parent.firstElementChild.innerHTML)
+    console.log(parent.lastElementChild.innerHTML)
+
+    child = document.querySelector('.day')
+    console.log(child.parentElement)
+    console.log(child.nextElementSibling)
+
+    console.log('Nodes', parent.childNodes)
+
+</script>
+</html>
