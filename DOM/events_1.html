@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM part one</title>
+</head>
+<body>
+    <h1>This is Siddhartha</h1>
+
+    <button id ="stop">Stop</button>
+    <button id ="start">Start</button>
+</body>
+<script>
+    const sayHi = function(){
+        console.log("Hello")
+    }
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "Javascript is Amazing"
+    }
+
+    const change = document.querySelector('#start').addEventListener('click', function(){
+        setTimeout(changeText,3000)
+        console.log('Start!')
+    })
+    const stopText = document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(change);
+        console.log("Stopped!")
+    })
+
+
+
+    
+</script>
+
+</html>
